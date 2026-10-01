@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Bento Pantanal",
+    "slug": "bento-pantanal",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "android": {
+      "package": "host.bento.pantanal",
+      "versionCode": 1
+    },
+    "plugins": [
+      "expo-sqlite",
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Fotografar animais avistados.",
+          "microphonePermission": false,
+          "photosPermission": false
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Registrar a posi\u00e7\u00e3o do avistamento."
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Gravar a descri\u00e7\u00e3o do avistamento."
+        }
+      ]
+    ]
+  }
+}
